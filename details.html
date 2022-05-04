@@ -1,0 +1,426 @@
+<!DOCTYPE html>                                                                     
+<html>                                                                              
+                                                                               <!--                                                            
+   +------------------------------------------+                                    
+   |  https://www.neuroshack.io/              |                                      
+   |  Created and modified by PRIM4T and dt   |                                    
+   |  https://www.PRIM4T.art/                 |                                   
+   |  https://www.codepen.io/dt_zero          |                                     
+   +------------------------------------------+                               
+          							        -->
+<!--     Notes: 
+		- Whitepaper outdated 
+		- Links are not linking to actual source
+-->
+  <body>                                                                             
+                                                          <!--                              
+   .______________________________________________________________.                                        
+   |              !BANNER_IMG                                     |             -->
+    <!-- <img src="banner.tiff" width="400" height="50" src="img.tiff">  -->           <!-- 
+   |______________________________________________________________|             -->
+                                                                                
+<head>
+                                                                             
+<title>/ N E U R O S H A C K's the Offical Webpage | Updated:050222 /   </title>
+                                                                   
+<!-- -->                                                                                            
+  <meta charset=UTF-8">                                                                                  
+<!-- -->                                                                                                 
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">    
+  <meta name="keywords" content="null, null">                                             
+  <meta property="og:title" content="null">                                                               
+  <meta name="owner" content="null">                                                                       
+  <meta property="og:description" content="null">                                                       
+  <meta property="og:site_name" content="null">                                                       
+<!--                                                                                                   
+  	+-------+                                                                                       
+   	|  CSS  |                                                                                     
+   	+-------+                                                                                   
+-->                                                                                                
+<style>                                                                                   
+body {
+/*font*/font-family: monospace;
+/*bold*/font-weight: 400;
+/*tiny*/font-size: 15pt;
+  /*
+	   Note:
+	       the "em" value is based on the width of
+	       the uppercase M   
+*/
+        padding-left: 1em;
+        padding-right: 1em;
+	padding-top: 7px;
+        padding-bottom: 50px;        
+}
+video {
+padding-left: 46px;
+}
+iframe {
+padding-left: 45px;
+}
+span {
+ margin-left: 69px;
+}
+a {
+      color: #754f4f;
+      text-decoration: none;
+    }
+/* */
+
+/*Headers*/
+header {
+margin-left: 235px;
+}
+h1 {
+        font-size: 200%;
+}
+
+h2 {
+        font-size: 167%;
+}
+
+h3 {
+	margin-left: 59px;
+        font-size: 75%;
+        font-weight: normal;
+}
+/*Links*/
+a {
+        text-decoration: none;
+        font-weight: 3;
+
+}
+/*List+Paragraph*/
+p, ul {
+	font-size: 90%;
+        margin-left: 1.5em;
+}
+
+p.lede {
+        font-size: 120%;
+        margin-left: 1.25em;
+}
+/*List_Style*/
+ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 3em;
+}
+ul li {
+        margin-top: 5pt;
+        margin-bottom: 5pt;
+}
+ul li::before {
+        content: "•";
+        color: #c08e8e;
+        font-weight: bold;
+        display: inline-block;
+        width: 1.1em;
+        margin-left: -1.1em;
+}
+
+blockquote {
+        margin-left: 2.25em;
+        font-style: italic;
+        font-weight: 300;
+        padding-left: 0.75em;
+        border-left: 1px solid #597f7d;
+}
+/*pre_text*/
+pre {
+        font-family: 'Fira Mono', monospace;
+        font-size: 75.15%;
+        margin-left: 1em;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+nav {
+        font-family: 'monospace;
+        font-size: 50.15%;
+        margin-left: 555px;
+	overflow: hidden;
+}
+
+img {
+        max-width: 100%;
+	padding-left: 75px;
+}
+section {
+        font-family: 'Fira Mono', monospace;
+        font-size: 75.15%;
+        margin-left: 100px;
+	max-width: 100%;
+	overflow: hidden;
+}
+footer {
+   position: fixed;
+   width: 100%;
+   bottom: 0%;
+   left: 50%;
+   transform: translate(-50%, 0);
+   padding-left: 300px;
+   padding-right: 1%;
+   padding-bottom: 1%;
+   background-color: rgba(24, 23, 20, 0.80); 
+}
+
+/*BUTTONS*/
+.button1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+  cursor: crosshair;
+  padding: 3px 6px;
+  font-size: 200%;
+  background-color: #c08e8e; 
+  color: #181714; 
+  /*border: 2px solid #c08e8e;*/
+}
+
+.button1:hover {
+ background-color: #181714;
+  color: #c08e8e;
+}
+.button999 {
+   display: inline-flex;
+  /*cursor: crosshair;*/
+   padding: 0px 0px;
+   font-size: 15px;
+   font-weight: 200;
+   background-color: black; 
+   
+   color: #754f4f; 
+  /*border: 2px solid #754f4f;*/
+}
+
+.button2 {
+  display: inline-block;
+  cursor: crosshair;
+  /*padding: 1px 1px;*/
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 4px;
+   padding-top: 0px;
+  font-size: 25px;
+  background-color: #000000; 
+  color: #754f4f; 
+}
+
+.button2:hover {
+  background-color: #754f4f;
+  color: #000000;
+}
+
+  /*  Button */
+  /*  B_#18 */
+
+.button18 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px 6px;
+  font-size: 9px;
+  background-color: #181714; 
+  color: #754f4f; 
+  /*border: 1px solid #754f4f;*/
+}
+
+.button24 {
+ /* display: inline-block;*/
+ /* cursor: pointer;*/
+ /* padding: 3px 6px;*/
+  /*font-size: 9px;*/
+  /*background-color: #181714; */
+  /*color: #754f4f;*/ 
+  /*border: 1px solid #754f4f;*/
+}
+.button24:hover {
+  background-color: #754f4f;
+  /*color: #181714;*/
+}
+
+.button24:hover {
+  background-color: #000000;
+  /*color: #181714;*/
+}
+.button9 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px 6px;
+  font-size: 11px;
+  background-color: #181714; 
+  color: #754f4f; 
+  border: 1px solid #754f4f;
+}
+
+.button9:hover {
+  background-color: #754f4f;
+  color: #181714;
+}
+
+/* Colors */
+
+body { background: #181714; color: #c08e8e; }
+p.lede { color: #c08e8e; }
+blockquote { color: #c08e8e; }
+pre { color: #c08e8e; }
+h1 { color: #c08e8e; }
+h2 { color: #c08e8e; }
+h3 { color: #754f4f; }
+
+/* Responsivity */
+
+@media only screen and (max-width: 499px) and (orientation: portrait) {
+        body { font-size: 12pt; -webkit-text-size-adjust: 100%;
+        padding-left: 0; padding-right: 0; }
+}
+@media only screen and (orientation: landscape) and (max-width: 850px) {
+        body { font-size: 12pt; -webkit-text-size-adjust: 100%;
+        padding-left: 0; padding-right: 0; }
+}
+/*              */
+</style>
+</head>
+<!--  
+-->
+<body>
+
+<div>
+  <font size="4" color="oldlace">
+    <header><!--null--></header> 
+  </font>
+</div>
+
+<div style="line-height: 2"><pre>  
+<span class="neon">  ⟠ NEUROSHACK.io
+			 Address: 0xfD4F44d62F54951C39FE3af13C175Ad1e2a77aaB
+                         <i>Introducing Neuroshack, a cast of freelance artists who share
+		         the same like minded visions.</font></i>
+	                 ERC-1155:<i> <a href="https://polygon.technology/" style="cursor:crosshair">Polygon Network</a> / <a href="https://opensea.io/neuroshack" style="cursor:crosshair">Opensea</a></i> </pre>
+      </span></div>
+<div>
+  <!-- Menu -->
+<nav>
+<a href="https://neuroshack.io/showcase" style="cursor:crosshair" class="button button2"><strong><font size="6">showcase</font></strong></a> |
+<a href="https://neuroshack.io/blog" style="cursor:crosshair" class="button button2"><strong><font size="6">blog</font></strong></a> |
+<a href="https://github.com/dtrieb123/neuroshack" style="cursor:crosshair" class="button button2"><strong><font size="6">git</font></strong></a>
+</div>
+</nav>
+		<!--
+		+------------+
+		| text_start |
+		+------------+
+		-->
+              <pre>
+	   <font size="5"><i>## showcase:</font>	</i>
+		</pre>                               
+                                                                             
+           <div>
+
+</div>
+<pre>	
+						   -+- 
+	 	      <img src="https://raw.githubusercontent.com/dtrieb123/neuroshack/main/media/swampN.png">
+	Title:         <font class="button button999">The Swamp Chronicals Part 1 - Audiobook</font>  
+	Type:  	       <i>.mp4</i>        
+	Creator:       Neuroshack                    
+	Narrator:      lan         
+	Artwork:       B.F. Butcher   
+	Token: 	       <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114575206702848530064137917287803621834875060729614287726258536349708129927169">https://opensea.io/assets/matic/0x2953399124f0cbb46d2c..</a>
+	Hosted:        <a href="https://www.youtube.com/channel/UCYeit9O39VYjYRxVlIStKQw" style="cursor:crosshair" target="_blank" class="button button24">https://www.youtube.com/channel/UCYeit9O39VYjYRxVlIStKQw</a>
+
+						   -+-  	
+		      <img src="https://raw.githubusercontent.com/dtrieb123/neuroshack/main/media/NS-CREW2.png">
+	Contact:       <a href="https://polygonscan.com/address/0x2953399124f0cbb46d2cbacd8a89cf0599974963" style="cursor:crosshair" class="button button24" target="_blank">0x2953399124F0cBB46d2CbACD8A89cF0599974963</a>		                
+	Title:         <font class="button button999">The Swamp Chronicals - OST - Album</font>	
+	Type:          <i>.mp4</i>
+	Creator:       Neuroshack
+	Tracks:        A. STRANDED
+ 	               B. Silent Gate
+	Cover:         dt
+	Contributors: 
+	               1. MADMATIC          2. Vince19drums 
+	               3. Helios_XII        4. _j0ules
+	               5. tremor_sounds     5. titanglade
+	Token:         <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114575206702848530064137917287803621834875060729614287726258536351907153182721" class="button button24" style="cursor:crosshair" target="_blank">https://opensea.io/assets/matic/0x2953399124f0cbb46..</a>
+		       <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114575206702848530064137917287803621834875060729614287726258536353006664810497" class="button button24" style="cursor:crosshair" target="_blank">https://opensea.io/assets/matic/0x2953399124f0cbb46..</a>	
+	Text:            <i> A lone and desolate pilot dwells in a swampy wasteland..waiting,
+		                        ..waiting for the silent gate..
+                     
+		          Noisy and irritating insects vibrate near his ear as he attempts
+		          to swat them away, but cant. Eyes wide a single tear drops as he
+		          adjusts from his placid position; but holds strong, eyes shift as
+                          he quickly thinks of a revered memory. A last breath leaves his 
+	                  cracked lips, the small cloud of vapor slowly disapears..
+
+                             	 One low, wandering man in woe, 
+					I often crossed on my way 
+				  He appealed so abjectly for reprieve
+				 that there was only one thing I could say
+ 
+                          	    I had no right to demand his name, 
+		 		    or where he went, from where he came
+	      	      Still, there rang something in his spirit that won my care. 
+		      	            Now, like he, could I receive
+					       the same?
+						<i>-The Stranger</i>
+
+						   -+-
+		            <img src="githubHOSTED-image_of_mini_discNFT_here.gif" width="350px" height="350px">
+	Contact:       <a href="https://polygonscan.com/address/0x2953399124f0cbb46d2cbacd8a89cf0599974963" style="cursor:crosshair" class="button button24" target="_blank">0x2953399124F0cBB46d2CbACD8A89cF0599974963</a>		                            
+	Type:          <i>.mp4</i>
+	Creator(s):    Neuroshack
+	Track:         Audiobook Intro - Vastness of Space
+	Cover:         1. _j0ules             2. treskiddos
+	               3. taha s.             4. Purdue U.
+   	Contributors:  1. kralsound           2. Vince19drums
+	Hosted:        <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114575206702848530064137917287803621834875060729614287726258536350807641554945" style="cursor:crosshair" class="button button24" target="_blank">https://opensea.io/assets/matic/0x2953399124f0cbb46d..</a>
+
+						   -+-
+		      <img src="https://raw.githubusercontent.com/dtrieb123/neuroshack/main/media/SCHREI.jpg" height="1000px">
+	Contact:       <a href="https://polygonscan.com/address/0x2953399124f0cbb46d2cbacd8a89cf0599974963" style="cursor:crosshair" class="button button24" target="_blank">0x2953399124F0cBB46d2CbACD8A89cF0599974963</a>		                            
+	Title:         <font class="button button999">SCHREI by Helios and Valentina - Neuroshack - NFT Music</font> 	
+        Type:          </i>.mp4</i>
+	Creator(s):    Neuroshack
+	Cover:         PRIM4T  
+	Contributors:  1. Helios_XII      2. Valentina Iela
+	Token:         <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114575206702848530064137917287803621834875060729614287726258536348608618299393" style="cursor:crosshair" class="button button24" target="_blank">https://opensea.io/assets/matic/0x29533991..</a>
+	Hosted:	       <a href="https://www.youtube.com/watch?v=a0Z9YwqADIg" style="cursor:crosshair" class="button button24" target="_blank">https://www.youtube.com/watch?v=a0Z9YwqADIg</a>
+	
+						   -+-
+		      <img src="https://raw.githubusercontent.com/dtrieb123/neuroshack/main/gif.gif">
+	Contact:       <a href="https://polygonscan.com/address/0x2953399124f0cbb46d2cbacd8a89cf0599974963" style="cursor:crosshair" class="button button24" target="_blank">0x2953399124F0cBB46d2CbACD8A89cF0599974963</a>		                            
+	Title:         <font class="button button999">Neuroshack NFT #1</font> 	
+	Type:          <i>.mp4</i>
+	Creator(s):    Neuroshack 
+	Contributors:  Mackenzie J.B.
+	Token:         <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/114575206702848530064137917287803621834875060729614287726258536347509106671617" style="cursor:crosshair" class="button button24" target="_blank">https://opensea.io/assets/matic/0x2953399..</a>
+
+
+	Donations: 
+		   btc: bc1q68cs3uq4an9ljwdaavuteejetym9053sa27yfn 
+		   eth: 0xfD4F44d62F54951C39FE3af13C175Ad1e2a77aaB
+		   xmr:
+		  grin:
+		   rtm:
+		<!-- PRIM4T's donation style layout/icons -->
+</pre>
+<!--
+ -->
+<footer><pre>
+              <font color="#754f4f"> © Neuroshack 2022    </font> 
+	        <a href="https://neuroshack.io/contact/" style="cursor:crosshair">Contact </a><font color="#754f4f">|</font> <a href="https://neuroshack.io/about/" style="cursor:crosshair">About</footer>
+<!--
+# Team:
+	   |-Current_Team-------|-Title------------|
+	   |   dt               | technical_artist |
+	   |--------------------|------------------|
+	   |   PRIM4T           | backend-dev/art  |
+	   |--------------------|------------------|
+# Misc.:
+
+	Contribute to our team on github or drop us a comment on bitcointalk.org
+	btc: bc1q68cs3uq4an9ljwdaavuteejetym9053sa27yfn 
+	eth: 0xfD4F44d62F54951C39FE3af13C175Ad1e2a77aaB
+	
+-->
