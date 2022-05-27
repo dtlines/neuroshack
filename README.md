@@ -10,7 +10,7 @@
  
  With the current color-scheme create a page similiar to [Minter](https://prim4t.github.io/neuroshack/Minter/index)
  
- Commit and comment for suggestions and tips or contact [PRIM4T](https://primat.art) / [dtlines](https://www.github.com/dtlines) for more info
+ Contact [PRIM4T](https://primat.art) / [dtlines](https://www.github.com/dtlines) for more info
  
  #
  
