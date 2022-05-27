@@ -4,7 +4,7 @@
  
  Edited Neuroshack .json file and added a few style changes
  
- Releasing 2 NFTs next month and a new track on Soundclout / Youtube
+ Releasing 2 NFTs next month and a new track on Soundcloud / Youtube
  
  Looking to add Libera Chat or Matrix chat for our new Minter page
  
