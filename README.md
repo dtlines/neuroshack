@@ -1,4 +1,4 @@
-# Updates:
+## Updates:
  
  Created a new page 'platforms.json' and 'platforms.html'
  
@@ -10,7 +10,8 @@
  
  With the current color-scheme create a page similiar to [Minter](https://prim4t.github.io/neuroshack/Minter/index)
  
- Commit and comment for suggestions and tips or contact [PRIM4T](https://primat.art) for more info
- #
+ Commit and comment for suggestions and tips or contact [PRIM4T](https://primat.art) / (dtlines)(https://www.github.com/dtlines) for more info
+ 
+ # Thanks for visiting
 
 
