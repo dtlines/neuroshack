@@ -7,7 +7,7 @@
 <a > <img width ='100%'  height ='2px' src ='https://upload.wikimedia.org/wikipedia/commons/b/bf/GradientPurpleBlue.png'> 
 
 <a name="home"></a>
-##### - [  What is NEUROSHACK? ](#neuro) | [TODO-List](#todo) 
+##### - [  What is NEUROSHACK? ](#neuro) | [ Updates ](#updates) 
 
 <a > <img width ='100%'  height ='2px' src ='https://upload.wikimedia.org/wikipedia/commons/b/bf/GradientPurpleBlue.png'> 
 
@@ -32,8 +32,8 @@
 
 
 <a > <img width ='100%'  height ='5px' src ='https://upload.wikimedia.org/wikipedia/commons/b/bf/GradientPurpleBlue.png'> 
-<a name="todo"></a>
-# TODO-List:
+<a name="Updates"></a>
+# Updates:
 
  
 <a> <img width ='100%'  height ='5px' src ='https://upload.wikimedia.org/wikipedia/commons/b/bf/GradientPurpleBlue.png'> </a>
